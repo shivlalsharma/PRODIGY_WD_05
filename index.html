@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get real-time weather updates for your location or any city around the world with our Weather Web App. Stay informed on wind speed, humidity, temperature, and more.">
+    <meta name="keywords" content="weather, weather app, real-time weather, weather forecast, city weather, wind speed, humidity, clouds, weather app">
+    <meta name="author" content="Shivlal Sharma">
+    <link rel="icon" href="./asset/favicon.png" type="image/png">
+    <title>Weather Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="weather-title">Weather App</h1>
+        <div class="tabs">
+            <p class="tab-option" id="user-weather" aria-label="View your weather information">Your Weather</p>
+            <p class="tab-option" id="search-weather" aria-label="Search for weather by city">Search Weather</p>
+        </div>
+        <div class="weather-container">
+            <div class="sub-container grant-location-container">
+                <img src="./asset/location.png" width="80" height="80" alt="Location icon" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get Weather Information</p>
+                <button class="btn" id="grant-access" aria-label="Click to grant location access">Grant Access</button>
+            </div>
+            <form class="search-form" aria-label="Search weather by city">
+                <input placeholder="Search for City..." id="search-input" aria-label="Enter city name to search for weather">
+                <button class="btn" type="submit" aria-label="Search weather">
+                    <img src="./asset/search.png" alt="Search icon" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+            <div class="sub-container loading-container">
+                <img src="./asset/loading.gif" width="150" height="150" alt="Loading animation">
+                <p>Loading</p>
+            </div>
+            <div class="sub-container weather-info-container">
+                <div class="location-info">
+                    <p class="city-name" aria-live="polite"></p>
+                    <img class="country-icon" alt="Country flag">
+                </div>
+                <p class="desc" aria-live="polite"></p>
+                <img class="weather-icon" alt="Weather condition icon">
+                <p class="temp" aria-live="polite"></p>
+                <div class="weather-parameters">
+                    <div class="parameter">
+                        <img src="./asset/wind.png" alt="Wind icon" >
+                        <p>wind speed</p>
+                        <p class="wind-speed"></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./asset/humidity.png" alt="Humidity icon" >
+                        <p>humidity</p>
+                        <p class="humidity"></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./asset/cloud.png" alt="Cloud icon" >
+                        <p>Clouds</p>
+                        <p class="cloudiness"></p>
+                    </div>
+                </div>
+            </div>
+            <span class="error" aria-live="assertive"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
