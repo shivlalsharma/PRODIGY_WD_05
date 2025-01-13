@@ -1,4 +1,4 @@
-# Weather Web App 🌦️
+# Weather App 🌦️
 
 Get real-time weather updates for your location or any city around the world with the Weather Web App. This application provides comprehensive weather details, including temperature, wind speed, humidity, and cloudiness, presented in an intuitive and visually appealing interface.
 
@@ -7,7 +7,7 @@ Get real-time weather updates for your location or any city around the world wit
 ## 🚀 Deployment
 
 The Weather Web App is deployed and accessible online.  
-Explore the live application here: **[Weather Web App Live Demo](https://fetchcurrentweather.netlify.app)**.
+Explore the live application here: **[Weather App Live Demo](https://fetchcurrentweather.netlify.app)**.
 
 ---
 
